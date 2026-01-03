@@ -1,2 +1,9 @@
-# core-engine-signal
-Sensor Fusion &amp; Inference Engine (SIGNAL) — FFT, correlation, coherence, anomaly detection, confidence.
+# CORE ENGINE — SIGNAL (Sensor Fusion & Inference)
+
+SIGNAL converts multi-engine outputs into provable metrics:
+- FFT + spectral features
+- cross-correlation + phase locking
+- coherence + coupling strength
+- statistical confidence + anomaly detection
+
+Deterministic processing engine. No identity. CORE-governed.
