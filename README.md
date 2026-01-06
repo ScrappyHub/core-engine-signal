@@ -1,63 +1,34 @@
-# 🧠 CORE ENGINE — SIGNAL GOVERNANCE (CANONICAL)
+# SIGNAL — Signal Processing & Inference Engine
 
-File: `verticals/signal/CORE_SIGNAL_ENGINE_GOVERNANCE.md`  
-Engine Key: **SIGNAL**  
-Authority Level: Engine Governance (Binding)  
-Status: ✅ BINDING | ✅ NON-OPTIONAL  
+SIGNAL performs deterministic transforms on sealed data.
 
-## 1. Authority & Inheritance
+---
 
-SIGNAL inherits CORE governance and registry contract.
+## Engine Role
 
-## 2. Scope
+**Engine Type:** TRUTH_ADJACENT_COMPUTE  
+**Domain:** Signal processing
 
-SIGNAL performs signal processing and inference metrics:
-- FFT and spectral feature extraction
-- cross-correlation and coherence
-- phase locking metrics
-- anomaly detection (statistical)
-- confidence scoring of declared inputs
+---
 
-SIGNAL may ingest data only if explicitly provided via CORE-managed contracts.
+## What SIGNAL Computes
 
-## 3. Non-Scope
+- FFT and spectra
+- coherence and correlation
+- statistical descriptors
+- anomaly scores (non-attributed)
 
-SIGNAL may NOT:
-- invent missing sensor data
-- perform cross-tenant inference
-- label outputs as “ground truth” beyond computed metrics
-- bypass registry gating and publish permissions
+---
 
-## 4. Determinism
+## Prohibitions
 
-All pipelines must be reproducible given:
-- exact inputs
-- exact engine release identity
-- exact parameterization
+SIGNAL does NOT:
+- invent data
+- infer identity or intent
+- publish independently
 
-## 5. Required Artifacts
+---
 
-- `ENGINE_MANIFEST.json`
-- `RUN_CONDITIONS.json`
-- `SHA256SUMS.txt`
-- `SPECTRAL_FEATURES.json`
-- `COHERENCE_REPORT.json`
-- `PHASE_LOCKING.json`
-- `ANOMALY_REPORT.json`
-- `CONFIDENCE.json`
-- `ARTIFACT_INDEX.json`
+## Governance
 
-## 6. Safety & Misuse Controls
-
-SIGNAL must:
-- label confidence bounds
-- record thresholds used
-- prevent misuse as “proof” without traceable upstream artifacts
-
-## 7. Publishing Rules
-
-Sealed runs required. Exports must include hashes + manifest.
-
-## 8. Amendments
-
-Governance review required.
+SIGNAL is governed by CORE law.
